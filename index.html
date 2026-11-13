@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Wilfredo A. De Mesa Jr. — IT student portfolio showcasing skills, projects, and contact information.">
+  <title>Wilfredo A. De Mesa Jr. | IT Student Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home">WD<span>.</span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a class="nav-contact" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero section container" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow">HELLO, I'M</p>
+        <h1>Wilfredo <span>De Mesa Jr.</span></h1>
+        <h2>IT Student &amp; Aspiring Web Developer</h2>
+        <p class="hero-text">I enjoy learning about technology and creating useful, simple, and user-friendly digital experiences. Welcome to my portfolio.</p>
+        <div class="hero-actions">
+          <a class="button primary" href="#projects">Explore My Work</a>
+          <a class="button secondary" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-art" aria-label="Decorative initials WD">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="initials">WD<span>.</span></div>
+        <div class="floating-tag tag-one">HTML · CSS</div>
+        <div class="floating-tag tag-two">Learning every day</div>
+      </div>
+    </section>
+
+    <section class="section" id="about">
+      <div class="container">
+        <p class="eyebrow">GET TO KNOW ME</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="about-card">
+          <p>My name is <strong>Wilfredo A. De Mesa Jr.</strong>, and I am an Information Technology student interested in web development, programming, and computer networking. I am building my skills through practice, school projects, and continuous learning.</p>
+          <p>My goal is to become a capable IT professional who can use technology to solve real-world problems and create meaningful solutions.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="skills">
+      <div class="container">
+        <p class="eyebrow">WHAT I'M LEARNING</p>
+        <h2 class="section-title">My <span>Skills</span></h2>
+        <div class="skills-grid">
+          <article class="skill-card"><div class="skill-icon">⌨</div><h3>HTML</h3><p>Building the structure of web pages.</p></article>
+          <article class="skill-card"><div class="skill-icon">✦</div><h3>CSS</h3><p>Styling responsive and attractive layouts.</p></article>
+          <article class="skill-card"><div class="skill-icon">JS</div><h3>JavaScript</h3><p>Learning interactive website features.</p></article>
+          <article class="skill-card"><div class="skill-icon">⌘</div><h3>Networking</h3><p>Studying network concepts and simulation.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="container">
+        <p class="eyebrow">SELECTED WORK</p>
+        <h2 class="section-title">My <span>Projects</span></h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <div class="project-number">01</div><h3>Student Portfolio Website</h3>
+            <p>A personal website introducing my background, skills, and learning journey.</p>
+            <div class="tags"><span>HTML</span><span>CSS</span><span>JavaScript</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">02</div><h3>Complaint Management System</h3>
+            <p>A school project concept for submitting, tracking, and managing customer complaints.</p>
+            <div class="tags"><span>PHP</span><span>MySQL</span><span>CRUD</span></div>
+          </article>
+          <article class="project-card">
+            <div class="project-number">03</div><h3>Network Simulation Learning Platform</h3>
+            <p>An academic platform concept for learning networking topics with lessons and multimedia.</p>
+            <div class="tags"><span>Networking</span><span>Education</span><span>Simulation</span></div>
+          </article>
+        </div>
+        <p class="small-note">Replace or update these sample project descriptions as your projects are completed.</p>
+      </div>
+    </section>
+
+    <section class="section alt-section" id="contact">
+      <div class="container contact-layout">
+        <div><p class="eyebrow">LET'S CONNECT</p><h2 class="section-title">Contact <span>Me</span></h2>
+          <p class="contact-intro">Have a question, collaboration idea, or opportunity? Send me a message.</p>
+        </div>
+        <form class="contact-form" id="contactForm">
+          <label for="name">Your name</label><input id="name" name="name" type="text" placeholder="Enter your name" required>
+          <label for="email">Email address</label><input id="email" name="email" type="email" placeholder="you@example.com" required>
+          <label for="message">Message</label><textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+          <button class="button primary" type="submit">Prepare Email</button>
+          <p class="form-note" id="formNote" aria-live="polite">This form opens your email app; it does not store messages.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer"><div class="container footer-inner"><p>© <span id="year"></span> Wilfredo A. De Mesa Jr.. All rights reserved.</p><a href="#home">Back to top ↑</a></div></footer>
+</body>
+</html>
